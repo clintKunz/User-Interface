@@ -49,7 +49,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -64,3 +64,100 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+.navigation a {
+	position: relative; 
+	top: -20px;
+}
+
+.logo {
+	margin-top: 15px;
+}
+
+section {
+	border-bottom: 1px solid; 
+}
+
+header {
+	padding-left: 200px;
+}
+
+header h1 {
+	position: relative;
+	top: -100px;
+}
+
+header img {
+	position: relative;
+	top: 20px;
+}
+
+.navigation a {
+	color:grey;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 15px;
+	padding-left: 40px;
+	padding-right: 40px;l
+}
+
+header img {
+	position: relative;
+	left: 120px;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 50px;
+	font-weight: bold; 
+	word-wrap: break;
+	width: 150px;
+	text-align: center;
+}
+
+h1 a {
+	font-size: 20px;
+	text-decoration: none;
+	color: grey;
+}
+
+div {
+	display: inline-block;
+	margin: 10px;
+}
+
+.top-content {
+	border-bottom: none;
+	border-top: 1px solid;
+	margin-top: 10px;
+}
+
+.top-content p {
+	display: inline-block;
+	width: 500px;
+}
+
+.bottom-content p {
+	display: inline-block;
+	width: 300px;
+}
+
+.middle-img {
+	width: 1200px;
+	height: 150px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.contact {
+	margin: 10px;
+}
+
+.contact address p {
+	width: 200px;
+	margin: 10px;
+}
+
+footer {
+	text-align: center;
+}
