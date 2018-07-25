@@ -65,13 +65,21 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+.navigation {
+	background-color: lightskyblue; 
+	position: fixed;
+	top: 0; 
+	z-index: 0;
+}
+
 .navigation a {
 	position: relative; 
-	top: -20px;
+	top: -30px;
 }
 
 .logo {
 	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 section {
@@ -84,7 +92,8 @@ header {
 
 header h1 {
 	position: relative;
-	top: -100px;
+	top: -40px;
+	font-family: 'Monoton', cursive;
 }
 
 header img {
@@ -103,20 +112,24 @@ header img {
 
 header img {
 	position: relative;
+	top: 50px;
 	left: 120px;
+	height: 300px;
+	width: 300px;
 }
 
 h1 {
 	display: inline-block;
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: bold; 
 	word-wrap: break;
 	width: 150px;
 	text-align: center;
+	margin-right: 50px;
 }
 
 h1 a {
-	font-size: 20px;
+	font-size: 15px;
 	text-decoration: none;
 	color: grey;
 }
@@ -129,12 +142,12 @@ div {
 .top-content {
 	border-bottom: none;
 	border-top: 1px solid;
-	margin-top: 10px;
+	margin-top: 50px;
 }
 
 .top-content p {
 	display: inline-block;
-	width: 500px;
+	width: 480px;
 }
 
 .bottom-content p {
@@ -147,6 +160,7 @@ div {
 	height: 150px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	/* background-image: url("img/mid-page-accent.jpg"); */
 }
 
 body {
@@ -166,3 +180,30 @@ footer {
 	text-align: center;
 	margin: 10px;
 }
+
+/* source: css-tricks.com*/
+
+.navigation a:hover {
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+  }
+  
+  @keyframes shake {
+	10%, 90% {
+	  transform: translate3d(-1px, 0, 0);
+	}
+	
+	20%, 80% {
+	  transform: translate3d(2px, 0, 0);
+	}
+  
+	30%, 50%, 70% {
+	  transform: translate3d(-4px, 0, 0);
+	}
+  
+	40%, 60% {
+	  transform: translate3d(4px, 0, 0);
+	}
+  }
